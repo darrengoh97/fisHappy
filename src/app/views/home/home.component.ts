@@ -44,10 +44,13 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    //this.plotly.plot(this.e1.nativeElement, [{y: [this.service.getTemperature()], type: 'line'}]);
     setInterval(() => {
       this.updateGraph();
     }, 1000);
+  }
+
+  feedNow() {
+    console.log(this.db.object('/').update({feed: true}));
   }
 
   updateGraph() {

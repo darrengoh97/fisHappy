@@ -26,16 +26,18 @@ export class SettingsService {
   initializeFormGroup() {
     this.getFirebase().subscribe(data => {
       this.form.setValue({
-        phoneNo: data[5],
-        temperatureMin: data[9],
-        temperatureMax: data[8],
-        phValueMin: data[4],
-        phValueMax: data[3],
-        turbidityMin: data[8],
-        schedule: data[6],
-        feederOpenTime: data[0]
+        phoneNo: data[6],
+        temperatureMin: data[10],
+        temperatureMax: data[9],
+        phValueMin: data[5],
+        phValueMax: data[4],
+        turbidityMin: data[9],
+        schedule: data[7],
+        feederOpenTime: data[1]
       });
     });
+
+    console.log(this.form.value);
   }
 
   postFirebase() {

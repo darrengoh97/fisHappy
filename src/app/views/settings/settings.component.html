@@ -1,4 +1,4 @@
-<form [formGroup] = "service.form" class="settings-form" (submit)="onDone()">
+<form [formGroup] = "service.form" (submit)="onDone()">
   <div class = "container">
     <mat-form-field>
       <input matInput formControlName="phoneNo" placeholder="Phone Number">
