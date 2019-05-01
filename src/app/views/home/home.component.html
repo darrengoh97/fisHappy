@@ -1,0 +1,14 @@
+<div class="monitor-graphs">
+  <h5>Temperature</h5>
+  <div id="graph1">
+    <plotly-plot id= "tempGraph" [data]="tempDataRef" [layout]="layout"></plotly-plot>
+  </div>
+  <h5>PH Value</h5>
+  <div id="graph2">
+    <plotly-plot id= "phGraph" [data]="phDataRef" [layout]="layout"></plotly-plot>
+  </div>
+  <h5>Turbidity</h5>
+  <div id="graph3">
+    <plotly-plot id= "turbGraph" [data]="turbDataRef" [layout]="layout"></plotly-plot>
+  </div>
+</div>

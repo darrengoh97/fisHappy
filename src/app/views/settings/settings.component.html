@@ -1,0 +1,29 @@
+<form [formGroup] = "service.form" class="settings-form" (submit)="onDone()">
+  <div class = "container">
+    <mat-form-field>
+      <input matInput formControlName="phoneNo" placeholder="Phone Number">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="temperatureMin" placeholder="Temperature Min">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="temperatureMax" placeholder="Temperature Max">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="phValueMin" placeholder="PH value Min">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="phValueMax" placeholder="PH value Max">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="turbidityMin" placeholder="Turbidity Min">
+    </mat-form-field>
+    <mat-form-field >
+      <input matInput formControlName="schedule" placeholder="Schedule (24 hour-format)">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="feederOpenTime" placeholder="Open Time (seconds)">
+    </mat-form-field>
+    <button class="btn btn-primary" type="submit" style="width: 50px;">Upload</button>
+  </div>
+</form>
